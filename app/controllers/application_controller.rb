@@ -37,8 +37,7 @@ class ApplicationController < Sinatra::Base
     def logout 
       session.clear
     end 
-
-    end 
+ 
   end 
 
 end

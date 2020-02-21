@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 
     post '/login' do 
         login(params[:username], params[:password])
-        redirect '/movies'
+        redirect '/'
     end 
 
     get '/logout' do 
