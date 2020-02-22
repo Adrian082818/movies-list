@@ -4,9 +4,9 @@
 <a href="/logout" role="button">Logout</a>
 
 <%@movies.each do |movie| %>
-<h2><%=movie.title%></h2>
-<h2><%=movie.director%></h2>
-<h2><%=movie.genre%></h2>
+<h2>Title: <%=movie.title%></h2>
+<h2>Director: <%=movie.director%></h2>
+<h2>Genre: <%=movie.genre%></h2>
 <a href="/movies/<%=movie.id%>/edit">Edit </a>
 
 <form action="/movies/<%=movie.id%>" method="post">
